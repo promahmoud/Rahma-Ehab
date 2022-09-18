@@ -82,13 +82,19 @@
   margin-left: auto; 
   margin-right: auto; 
   z-index: 500;
-  opacity: .3;
+  opacity: .7;
   border-radius: 84px;
   height: 100%;
   margin-bottom: 95px;
   background: transparent;
   width: 400px;
 }
+@media (max-width: 767.98px) { 
+  .slideshow {
+    transform: unset;
+    padding: 15px;
+  }
+ }
 
 .slideshow * {
   outline: none;

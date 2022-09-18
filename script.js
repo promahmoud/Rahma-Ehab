@@ -789,10 +789,11 @@ $(function () {
     }
   });
 
+  let  loopCount = 0;
   function updateProgress() {
     //Updates the progress bar
     var progress = document.getElementById("progress");
-    var value = 0, loopCount = 0;
+    var value = 0;
     if (audio.currentTime > 0) {
       value = Math.floor((100 / audio.duration) * audio.currentTime);
     }
